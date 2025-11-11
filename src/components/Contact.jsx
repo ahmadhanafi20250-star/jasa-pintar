@@ -9,7 +9,7 @@ export default function Contact() {
           Siap membantu Anda menyelesaikan tugas atau skripsi dengan cepat dan rapi.
         </p>
         <a
-          href="https://wa.me/6281234567890"
+          href="https://wa.me/6285219843725"
           target="_blank"
           rel="noreferrer"
           className="bg-green-500 text-white px-6 py-3 rounded-lg shadow-md"
@@ -26,7 +26,7 @@ export default function Contact() {
     Kami siap membantu Anda 24 jam — klik tombol di bawah untuk konsultasi langsung via WhatsApp.
   </p>
   <a
-    href="https://wa.me/6281234567890"
+    href="https://wa.me/6285219843725"
     target="_blank"
     rel="noreferrer"
     className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-md font-semibold transition"

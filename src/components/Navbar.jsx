@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { motion } from "framer-motion"; // 👉 import animasi
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,14 +30,26 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-6xl mx-auto flex justify-between items-center h-16 px-4">
-        {/* Logo */}
-        <h1
-          className={`text-2xl font-bold transition-colors duration-300 ${
-            isScrolled ? "text-blue-600" : "text-white drop-shadow-sm"
-          }`}
+        {/* Logo + Teks dengan animasi */}
+        <motion.div
+          className="flex items-center space-x-2"
+          initial={{ opacity: 0, x: -40 }} // mulai redup & agak ke kiri
+          animate={{ opacity: 1, x: 0 }} // muncul & geser ke tempatnya
+          transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          Jasa Pintar
-        </h1>
+          <img
+            src="/jasapintar.jpg"
+            alt="Logo Jasa Pintar"
+            className="w-10 h-10 object-contain rounded-md"
+          />
+          <h1
+            className={`text-2xl font-bold transition-colors duration-300 ${
+              isScrolled ? "text-blue-600" : "text-white drop-shadow-sm"
+            }`}
+          >
+            Jasa Pintar
+          </h1>
+        </motion.div>
 
         {/* Menu Desktop */}
         <div
@@ -61,7 +74,7 @@ export default function Navbar() {
 
         {/* Tombol WhatsApp */}
         <a
-          href="https://wa.me/6281234567890"
+          href="https://wa.me/6285219843725"
           target="_blank"
           rel="noreferrer"
           className={`hidden md:inline-block px-4 py-2 rounded-md text-sm font-medium transition ${
@@ -108,7 +121,7 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="https://wa.me/6281234567890"
+              href="https://wa.me/6285219843725"
               target="_blank"
               rel="noreferrer"
               className={`w-11/12 text-center px-4 py-2 rounded-md text-sm font-medium transition ${

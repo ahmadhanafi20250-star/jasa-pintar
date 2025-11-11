@@ -3,7 +3,7 @@ import React from "react";
 const services = [
   { title: "Pengerjaan Bab 1–3", desc: "Penulisan latar, tinjauan pustaka, dan metodologi yang rapi dan original." },
   { title: "Pengerjaan Bab 5", desc: "Analisis, pembahasan hasil, dan kesimpulan sesuai format akademik." },
-  { title: "Pengisian Kuesioner", desc: "Desain dan pengisian kuesioner penelitian kualitatif & kuantitatif." },
+  { title: "Pengisian Dan Pembuatan Kuesioner", desc: "Desain dan pengisian kuesioner penelitian kualitatif & sesuai indikator variable." },
   { title: "Turnitin", desc: "Cek kemiripan dokumen dan laporan Turnitin resmi." },
   { title: "PPT Presentasi", desc: "Desain presentasi profesional, dengan animasi ringan & visual menarik." },
   { title: "Tugas Lainnya", desc: "Revisi, formatting, pengecekan sitasi, dan konsultasi akademik." },

@@ -1,18 +1,18 @@
 import React from "react";
 
 export default function Testimonial() {
-  const data = [
+  const testimonials = [
     {
-      name: "Dewi",
-      text: "Pengerjaan cepat dan hasilnya memuaskan! Bab 1-3 saya langsung acc.",
+      name: "Ca",
+      text: "Makasi ya kak, rekomen banget! Kakaknya baik, ramah, sangat membantu pengerjaannya. Mantap banget, sukses trusss ✨✨",
     },
     {
-      name: "Rizky",
-      text: "Pelayanan ramah, revisi cepat, recommended banget untuk mahasiswa.",
+      name: "Beila",
+      text: "Terima kasih kak, beneran riil human! Udah dipakai untuk riset juga dan hasilnya aman banget 😍",
     },
     {
-      name: "Nadia",
-      text: "Harga terjangkau, komunikasi cepat lewat WA, hasil rapi dan sesuai.",
+      name: "Hanz",
+      text: "Kak thanks yaa udah bantu mulai dari pembuatan kuesioner sampai penyebaran. Fast respon banget, kaget tiba-tiba udah selesai aja 😭🔥",
     },
   ];
 
@@ -21,14 +21,17 @@ export default function Testimonial() {
       <h2 className="text-3xl font-bold text-blue-600 mb-10">
         Apa Kata Klien Kami
       </h2>
+
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-6 px-4">
-        {data.map((item, i) => (
+        {testimonials.map((item, i) => (
           <div
             key={i}
-            className="bg-white border rounded-xl p-6 shadow-sm hover:shadow-md transition"
+            className="bg-white border rounded-2xl p-6 shadow-sm hover:shadow-md transition text-left"
           >
-            <p className="text-gray-600 italic mb-4">"{item.text}"</p>
-            <h3 className="text-blue-600 font-semibold">{item.name}</h3>
+            <p className="text-gray-700 italic mb-4 leading-relaxed">
+              “{item.text}”
+            </p>
+            <h3 className="text-blue-600 font-semibold text-right">— {item.name}</h3>
           </div>
         ))}
       </div>
